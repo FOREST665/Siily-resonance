@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link ref="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+    <div class="container"> 
+    <div class="weather-app">
+        <form class="search-form" id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input type="search-form" placeholder="Type a city.." autofocus="on" autocomplete="off" id="search-text-input" class="form-control shadow-sm">
+              </div>
+            </br>
+              <div class="col-3">
+                <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm w-100" id="search-button">
+              </div>
+              <div class="col-3">
+                <button class="btn btn-success w-100" id="current-location-button">
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+        </br>
+<div class="container" id="main">
+          <h1 id="city">Montreal</h1>
+        
+          <div class="container">
+           
+              <div class="row">
+                  <div class="row align-items-end">
+                <div class="col-md-8"><h1 class="temperature" id="change"> -14°<span class="degrees">
+                    <a href="#" id="celsius">°C </a>| <a href="#" id="fahrenheit"> °F </a></h1>
+                  <h2 class="Sunny" id="description"> ☀️ Sunny   </h2>
+                  <p id="current-date"> Wednesday 15:00 </p>
+                  </div></div>
+                <div class="col-6 col-md-4">  <ul class="week"> 
+                    <li>Humidity: <span id="humidity">33</span>%</li>
+                           <li>Wind: <span id="wind">4</span> km/h</li>
+                         </ul></div>
+              </div>
+            </div>
+  
+    <div class="container">
+        <div class="row">
+          <div class="col"><button type="button" class="btn btn-light">❄️ Tuesday -9°C</button></div>
+          <div class="col"><button type="button" class="btn btn-light">🌤 Wednesday -2°C</button></div>
+          <div class="col"> <button type="button" class="btn btn-light">🥶 Thursday -16°C</button></div>
+          <div class="col"><button type="button" class="btn btn-light">🌤 </br>Friday -5°C</button></div>
+          <div class="col"><button type="button" class="btn btn-light">🌤 Saturday 0°C</button></div>
+
+        </div>
+  
+</div>
+</div>
+</div> 
+</div>
+
+	<script src="src/index.js">
+	</script>
+</body>
+
+</html>
